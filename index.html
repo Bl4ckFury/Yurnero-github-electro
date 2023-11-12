@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <!-- <link rel="stylesheet" href="./styles/media.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -14,6 +15,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=a3573ef7-2986-4771-9b49-3351dbf2984a&lang=ru_RU"></script>
     <title>Document</title>
   </head>
   <body>
@@ -430,32 +432,39 @@
         <div class="footer-block">
           <div class="footer-block__info">
             <div class="container-left">
-              <span class="footer-contact">
-                контакты
-              </span>
-              <h3 class="footer-title3">
-                Связаться с нами
-              </h3>
+              <span class="footer-contact"> контакты </span>
+              <h3 class="footer-title3">Связаться с нами</h3>
               <div class="block-info">
                 <div class="block-info__tel">
                   <span class="info-tel">Телефон</span>
-                  <a class="info__tel" href="tel:+7 4842 59-51-07">+7 4842 59-51-07</a>
+                  <a class="info__tel" href="tel:+7 4842 59-51-07"
+                    >+7 4842 59-51-07</a
+                  >
                 </div>
                 <div class="block-info__mail">
-                  <span>Телефон</span>
-                  <a class="info__mail" class="links-mail" href="mailto:sales@kelcom.ru">sales@kelcom.ru</a>
+                  <span class="info-tel">Почта</span>
+                  <a
+                    class="info__mail"
+                    class="links-mail"
+                    href="mailto:sales@kelcom.ru"
+                    >sales@kelcom.ru</a
+                  >
                 </div>
                 <div class="block-info__schedule">
-                  <span>График работы</span>
-                  <p class="block-info__work"> 08:00 – 17:00</p>
+                  <span class="info-tel">График работы</span>
+                  <p class="block-info__work">08:00 – 17:00</p>
                 </div>
                 <div class="block-info__address">
-                  <span>Адрес</span>
+                  <span class="info-tel">Адрес</span>
                   <p class="block-info__work">Калуга, Грабцевское шоссе 73</p>
                 </div>
                 <div class="block-info__download">
                   <a href="./img/svg/download.svg" download>
-                    <img src="./img/svg/download.svg" class="download-svg" alt="download">
+                    <img
+                      src="./img/svg/download.svg"
+                      class="download-svg"
+                      alt="download"
+                    />
                     Скачать карточку организации
                   </a>
                 </div>
@@ -463,13 +472,12 @@
             </div>
           </div>
           <div class="footer-block__map">
-            <div id="map-test" class="map"></div>
+            <div id="map" style="width: 1030px; height: 780px"></div>
           </div>
         </div>
       </section>
     </footer>
 
-    <script src="https://api-maps.yandex.ru/v3/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
