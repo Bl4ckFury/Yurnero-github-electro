@@ -325,12 +325,16 @@ body {
     .production-right {
       display: flex;
       align-items: center;
+      
       width: 854px;
       height: 100vh;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center left;
       background-image: url(../img/jpg/production.jpg);
+      .icon {
+        transform: translateX(-50%);
+      }
     }
   }
 }
@@ -351,6 +355,7 @@ body {
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+      max-width: 300px;
     }
   }
 
@@ -379,7 +384,7 @@ body {
 
     .slider-top__info {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       flex-direction: row;
       .slider-works {
         color: @grey;
@@ -502,10 +507,3 @@ body {
   }
 }
 
-.ymaps-b-pane, .ymaps-b-global {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-}

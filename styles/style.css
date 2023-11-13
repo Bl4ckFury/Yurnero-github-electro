@@ -23,7 +23,6 @@ body {
   max-width: 1920px;
 }
 .container-right {
-  margin: 0 auto;
   padding: 0 280px 0 0;
   max-width: 1920px;
 }
@@ -287,6 +286,9 @@ body {
   background-position: center left;
   background-image: url(../img/jpg/production.jpg);
 }
+.production .production-content .production-right .icon {
+  transform: translateX(-50%);
+}
 .slider {
   display: flex;
   flex-direction: column;
@@ -302,6 +304,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  max-width: 300px;
 }
 .slider .block-svg {
   display: flex;
@@ -325,10 +328,30 @@ body {
   justify-content: space-between;
   margin-bottom: 54px;
 }
-.slider .slider-top slider-top__info {
+.slider .slider-top .slider-top__info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
+}
+.slider .slider-top .slider-top__info .slider-works {
+  color: #4e5d80;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-right: 93px;
+}
+.slider .slider-top .slider-top__info .slider-title2 {
+  color: #1d3e79;
+  font-family: Tektur;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 608px;
 }
 .slider .slider-top .navigation-arrow {
   display: flex;
@@ -345,26 +368,6 @@ body {
   border: none;
   cursor: pointer;
   background: none;
-}
-.slider .slider-top .slider-works {
-  color: #4e5d80;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-right: 93px;
-}
-.slider .slider-top .slider-title2 {
-  color: #1d3e79;
-  font-family: Tektur;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  max-width: 608px;
 }
 .swiper {
   width: 100%;
@@ -420,7 +423,17 @@ body {
   letter-spacing: 0.8px;
   margin-bottom: 123px;
 }
+.footer .footer-block .footer-block__info .block-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 .footer .footer-block .footer-block__info .block-info .block-info__tel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
   padding-bottom: 28px;
 }
 .footer .footer-block .map {
