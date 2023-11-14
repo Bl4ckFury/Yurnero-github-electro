@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/media.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -35,7 +35,17 @@
           </div>
           <span class="container-null border"></span>
           <div class="nav-under">
+            <button class="nav-under__btn">
+              <span class="nav-btn__span"></span>
+              <span class="nav-btn__span"></span>
+              <span class="nav-btn__span"></span>
+            </button>
             <ul class="under-links">
+              <li>
+                <button class="btn-close">
+                  <img class="btn-close__svg" src="./img/svg/close.svg" alt="close">                
+                </button>
+              </li>
               <li class="under-link">
                 <a class="link" href="#">Услуги</a>
               </li>
@@ -43,16 +53,16 @@
                 <a class="link" href="#">Наши работы</a>
               </li>
               <li class="under-link">
-                <a class="link" href="#">Отзывы</a>
+                <a class="link" href="#reviews">Отзывы</a>
               </li>
               <li class="under-link">
-                <a class="link" href="#">Преимущества</a>
+                <a class="link" href="#advatages">Преимущества</a>
               </li>
               <li class="under-link">
                 <a class="link" href="#">О компании</a>
               </li>
               <li class="under-link">
-                <a class="link" href="#">Контакты</a>
+                <a class="link" href="#contacts">Контакты</a>
               </li>
             </ul>
             <div class="under-song">
@@ -119,7 +129,7 @@
       </section>
     </main>
 
-    <section class="middle">
+    <section class="middle" id="reviews">
       <div class="production">
         <div class="container-left">
           <div class="production-content">
@@ -166,7 +176,7 @@
       </div>
     </section>
 
-    <section class="bottom" id="#">
+    <section class="bottom" id="advatages">
       <div class="container-left">
         <div class="slider">
           <div class="container-right">
@@ -185,6 +195,7 @@
                     height="73"
                     viewBox="0 0 73 73"
                     fill="none"
+                    class="arrow-svg"
                   >
                     <circle cx="36.5" cy="36.5" r="36.5" fill="#F0F3F9" />
                     <path
@@ -200,6 +211,7 @@
                     height="73"
                     viewBox="0 0 73 73"
                     fill="none"
+                    class="arrow-svg"
                   >
                     <circle
                       cx="36.5"
@@ -428,7 +440,7 @@
     </section>
 
     <footer class="footer">
-      <section class="footer-top">
+      <section class="footer-top" id="contacts">
         <div class="footer-block">
           <div class="footer-block__info">
             <div class="container-left">
@@ -436,13 +448,13 @@
               <h3 class="footer-title3">Связаться с нами</h3>
               <div class="block-info">
                 <div class="block-info__tel">
-                  <span class="info-tel">Телефон</span>
+                  <span class="info-tel__span">Телефон</span>
                   <a class="info__tel" href="tel:+7 4842 59-51-07"
                     >+7 4842 59-51-07</a
                   >
                 </div>
                 <div class="block-info__mail">
-                  <span class="info-tel">Почта</span>
+                  <span class="info-mail">Почта</span>
                   <a
                     class="info__mail"
                     class="links-mail"
@@ -451,15 +463,15 @@
                   >
                 </div>
                 <div class="block-info__schedule">
-                  <span class="info-tel">График работы</span>
-                  <p class="block-info__work">08:00 – 17:00</p>
+                  <span class="info-schedule__span">График работы</span>
+                  <p class="info__schedule">08:00 – 17:00</p>
                 </div>
                 <div class="block-info__address">
-                  <span class="info-tel">Адрес</span>
-                  <p class="block-info__work">Калуга, Грабцевское шоссе 73</p>
+                  <span class="info-address__span">Адрес</span>
+                  <p class="info__address">Калуга, Грабцевское шоссе 73</p>
                 </div>
                 <div class="block-info__download">
-                  <a href="./img/svg/download.svg" download>
+                  <a href="./img/svg/download.svg" class="info-download">
                     <img
                       src="./img/svg/download.svg"
                       class="download-svg"
@@ -472,7 +484,7 @@
             </div>
           </div>
           <div class="footer-block__map">
-            <div id="map" style="width: 1030px; height: 780px"></div>
+            <div id="map" class="map"></div>
           </div>
         </div>
       </section>
